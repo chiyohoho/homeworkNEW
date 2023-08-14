@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="bai2.css">
+</head>
+
+<body>
+    <form>
+        <label for="mathang">Vui lòng chọn sản phẩm</label>
+        <br>
+        <select name="" class="mathang" style="padding: 10px; width: 100%; border-radius: 5px; margin-bottom: 20px;">
+            <option value="0"></option>
+            <option value="11">Sting</option>
+            <option value="12">Red Bull</option>
+            <option value="10">Coca Cola</option>
+            <option value="9">Pepsi</option>
+        </select>
+
+        <div class="form-group">
+            <label for="soluong">Vui lòng nhập số lượng muốn mua</label>
+            <input type="number" class="form-control" value="" id="soluong">
+            <small>Bạn sẽ được giảm 8% nếu mua từ 50 đến 100 sản phẩm.<br>
+                Nếu mua trên 101 sản phẩm thì các sản phẩm từ 101 trở đi sẽ được giảm thêm 12%</small>
+        </div>
+
+        <span type="submit" class="btn btn-primary">Submit</span>
+    </form>
+
+    <div id="show_result">
+        <h1>Tên mặt hàng : <span class="show_mathang"></span></h1>
+        <h2>Giá của 1 sản phẩm : <span class="show_gia"></span></h2>
+        <h2>Số lượng muốn mua : <span class="show_soluong"></span></h2>
+        <h2>Tổng số tiền cần thanh toán : <span class="show_total"></span></h2>
+        <small class="show_discount" style="font-style: italic;"></small>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="bai2.js"></script>
+</body>
+
+</html>

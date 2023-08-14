@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="bai1.css">
+</head>
+
+<body id="thebody">
+    <div class="background"></div>
+    <form class="theform">
+        <div class="form-group">
+            <label for="nhanvien">Vui lòng nhập tên nhân viên</label>
+            <input type="text" class="form-control" id="nhanvien" aria-describedby="emailHelp">
+        </div>
+
+        <div class="form-group">
+            <label for="giolamviec">Vui lòng số ngày làm việc trong tuần này</label>
+            <input type="number" class="form-control" value="" id="giolamviec">
+        </div>
+
+        <span type="submit" class="btn btn-primary">Submit</span>
+    </form>
+
+    <div id="show_result">
+        <h1>Tên nhân viên : <span class="show_nv"></span></h1>
+        <h3>Số giờ làm việc trong tuần : <span class="show_gioluong"></span></h3>
+        <h3 class="show_ot"></h3>
+        <h2>Tổng tiền lương trong tuần : <span class="show_total"></span></h2>
+        <small class="chuthich" style="font-style: italic;"></small>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="bai1.js"></script>
+</body>
+
+</html>
