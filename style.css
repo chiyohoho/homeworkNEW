@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+#user_input {
+    margin-top: 40px;
+    width: 500px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    font-weight: 500;
+
+}
+
+#doituong {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+}
+
+/* --------------------------- */
+body #progess_bar {
+    margin-top: 40px;
+    width: 500px;
+    height: 365px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 40px 10px;
+}
+
+body #progess_bar .diem {
+    position: relative;
+}
+
+body #progess_bar .diem::before {
+    position: absolute;
+    top: -20px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+body #progess_bar .diem::after {
+    position: absolute;
+    top: -20px;
+    right: 0;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+body #progess_bar .diem_toan::after {
+    content: "10 Điểm";
+}
+
+body #progess_bar .diem_toan::before {
+    content: "Điểm Toán";
+}
+
+body #progess_bar .diem_van::before {
+    content: "Điểm Văn";
+}
+
+body #progess_bar .diem_anh::before {
+    content: "Điểm Văn";
+}
+
+body #progess_bar .diem_tb::before {
+    content: "Điểm Trung Bình";
+}
+
+body .progress_1 {
+    margin-bottom: 20px;
+}
+
+body #progess_bar .diem .progress .progress-bar {
+    position: relative;
+    border-radius: 3px;
+    width: 0%;
+
+}
+
+body #progess_bar .diem .progress .progress-bar .diem_show {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 1%;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+body #addbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    left: 69%;
+    top: 20%;
+
+    background-repeat: no-repeat;
+}

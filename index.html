@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="user_input">
+        <form>
+            <div class="form-group">
+                <label for="sobaodanh">Số báo danh</label>
+                <input type="number" class="form-control" id="sobaodanh" aria-describedby="emailHelp">
+            </div>
+
+            <div class="form-group">
+                <label for="tenthisinh">Tên thí sinh</label>
+                <input type="text" class="form-control" id="tenthisinh">
+            </div>
+
+            <label for="doituong">Đối tượng ưu tiên</label>
+            <select name="doituong" id="doituong">
+                <option value="0">Vui lòng chọn</option>
+                <option value="1">Đối tượng 1: Có hoàn cảnh khó khăn</option>
+                <option value="2">Đối tượng 2: Con thương binh/liệt sĩ, có công với cách mạng</option>
+                <option value="3">Bình thường</option>
+                <option value="4">Wibu</option>
+            </select>
+
+            <div class="form-group">
+                <label for="diemtoan">Điểm Toán</label>
+                <input type="number" class="form-control" id="diemtoan">
+            </div>
+
+            <div class="form-group">
+                <label for="diemvan">Điểm Văn</label>
+                <input type="number" class="form-control" id="diemvan">
+            </div>
+
+            <div class="form-group">
+                <label for="diemanh">Điểm Anh</label>
+                <input type="number" class="form-control" id="diemanh">
+            </div>
+
+            <span type="submit" class="btn btn-success">Kiểm tra kết quả</span>
+        </form>
+    </div>
+
+    <div id="progess_bar">
+        <div class="diem_toan diem">
+            <div class="progress progress_1">
+                <div class="progress-bar progress_toan" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <p class="diemtoan_show diem_show"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="diem_van diem">
+            <div class="progress progress_1">
+                <div class="progress-bar progress_van" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <p class="diemvan_show diem_show"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="diem_anh diem">
+            <div class="progress progress_1">
+                <div class="progress-bar progress_anh" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <p class="diemanh_show diem_show"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="diem_tb diem">
+            <div class="progress progress_1">
+                <div class="progress-bar progress_tb" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <p class="diemtb_show diem_show"></p>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="show_ketqua1"></h4>
+        <h4 class="show_ketqua2"></h4>
+        <h4 class="show_ketqua3"></h4>
+        <h4 class="show_ketqua4"></h4>
+    </div>
+
+    <div id="addbg">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
